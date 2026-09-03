@@ -1,33 +1,33 @@
-# 🎵 Spotify Data Analysis
+# 🎵 Analisis Data Spotify
 
-Data analysis project exploring Spotify music popularity and audio characteristics using Python and Exploratory Data Analysis (EDA).
+Proyek analisis data untuk mengeksplorasi popularitas musik dan karakteristik audio lagu Spotify menggunakan Python dan Exploratory Data Analysis (EDA).
 
-## 📌 About the Project
+## 📌 Tentang Proyek
 
-This project analyzes a dataset containing 114,000 Spotify tracks across different music genres.
+Proyek ini menganalisis dataset yang berisi **114.000 lagu Spotify** dari berbagai genre musik.
 
-The analysis focuses on exploring patterns in song popularity, audio characteristics, explicit content, and relationships between audio features.
+Analisis dilakukan untuk mengeksplorasi pola popularitas lagu, karakteristik audio, konten eksplisit, serta hubungan antarfitur audio.
 
-The project follows several stages of the data analysis process, including data understanding, data cleaning, feature engineering, and exploratory data analysis (EDA).
+Proses analisis terdiri dari beberapa tahapan, yaitu pemahaman data, pembersihan data, feature engineering, dan exploratory data analysis (EDA).
 
-## 🎯 Objectives
+## 🎯 Tujuan Analisis
 
-- Identify music genres with the highest average popularity.
-- Explore the audio characteristics of songs with different popularity levels.
-- Analyze the relationship between explicit content and song popularity.
-- Analyze the relationship between explicit content and danceability.
-- Explore relationships between Spotify audio features using correlation analysis.
+- Mengidentifikasi genre musik dengan rata-rata popularitas tertinggi.
+- Mengeksplorasi karakteristik audio pada lagu dengan tingkat popularitas yang berbeda.
+- Menganalisis hubungan antara konten eksplisit dan popularitas lagu.
+- Menganalisis hubungan antara konten eksplisit dan danceability.
+- Mengeksplorasi hubungan antarfitur audio Spotify menggunakan analisis korelasi.
 
 ## 📊 Dataset
 
-The dataset consists of **114,000 Spotify tracks** across various music genres.
+Dataset terdiri dari **114.000 lagu Spotify** dari berbagai genre musik.
 
-The dataset contains information about:
+Dataset mencakup informasi mengenai:
 
-- Track and artist information
-- Music genre
-- Popularity
-- Explicit content
+- Informasi lagu dan artis
+- Genre musik
+- Popularitas
+- Konten eksplisit
 - Danceability
 - Energy
 - Loudness
@@ -36,68 +36,76 @@ The dataset contains information about:
 - Liveness
 - Valence
 - Tempo
-- Duration
+- Durasi lagu
 
-## 🔍 Analysis Process
+## 🔍 Tahapan Analisis
 
-### 1. Data Understanding
+### 1. Pemahaman Data
 
-The dataset was explored to understand its structure and characteristics through:
+Dataset dieksplorasi untuk memahami struktur dan karakteristik data melalui:
 
-- Dataset dimensions
-- Data types
-- Descriptive statistics
-- Unique values
-- Missing value identification
-- Outlier detection
-- Duplicate detection
+- Dimensi dataset
+- Tipe data
+- Statistik deskriptif
+- Nilai unik
+- Identifikasi nilai yang hilang
+- Deteksi outlier
+- Deteksi data duplikat
 
-### 2. Data Cleaning
+### 2. Pembersihan Data
 
-Several preprocessing steps were performed:
+Beberapa tahapan pembersihan data yang dilakukan meliputi:
 
-- Handling missing values.
-- Detecting and handling outliers using IQR Capping (Winsorization).
-- Removing duplicate records.
-- Normalizing categorical text by converting values to lowercase and removing unnecessary spaces.
-- Verifying data types and data quality after cleaning.
+- Menangani nilai yang hilang.
+- Mendeteksi dan menangani outlier menggunakan IQR Capping (Winsorization).
+- Menghapus data duplikat.
+- Menormalisasi data kategorikal dengan mengubah teks menjadi huruf kecil dan menghapus spasi yang tidak diperlukan.
+- Memverifikasi tipe data dan kualitas data setelah proses pembersihan.
 
 ### 3. Feature Engineering
 
-Several new features were created to support the analysis:
+Beberapa fitur baru dibuat untuk mendukung proses analisis:
 
-- `duration_min` — converts track duration from milliseconds to minutes.
-- `popularity_category` — categorizes songs into Low, Medium, and High popularity based on quantiles.
-- `tempo_category` — categorizes tempo into Slow, Medium, and Fast based on quantiles.
-- `explicit_encoded` — converts explicit values from boolean format into numerical values (0/1).
+- `duration_min` — mengubah durasi lagu dari milidetik menjadi menit.
+- `popularity_category` — mengelompokkan lagu menjadi Low, Medium, dan High berdasarkan kuantil.
+- `tempo_category` — mengelompokkan tempo menjadi Slow, Medium, dan Fast berdasarkan kuantil.
+- `explicit_encoded` — mengubah nilai explicit dari format boolean menjadi nilai numerik (0/1).
 
-### 4. Exploratory Data Analysis
+### 4. Exploratory Data Analysis (EDA)
 
-The analysis includes:
+Analisis eksploratif yang dilakukan meliputi:
 
-- Distribution of tracks across music genres.
-- Top 10 genres based on the number of tracks.
-- Top 10 genres based on average popularity.
-- Distribution of song popularity.
-- Popularity comparison between explicit and non-explicit songs.
-- Danceability comparison based on explicit content.
-- Audio feature profiles across popularity categories.
-- Relationship between energy and danceability.
-- Relationship between energy and valence.
-- Correlation analysis between numerical audio features.
+- Distribusi lagu berdasarkan genre musik.
+- 10 genre dengan jumlah lagu terbanyak.
+- 10 genre dengan rata-rata popularitas tertinggi.
+- Distribusi popularitas lagu.
+- Perbandingan popularitas lagu eksplisit dan non-eksplisit.
+- Perbandingan danceability berdasarkan konten eksplisit.
+- Profil karakteristik audio berdasarkan kategori popularitas.
+- Hubungan antara energy dan danceability.
+- Hubungan antara energy dan valence.
+- Analisis korelasi antarfitur audio numerik.
 
-## 💡 Key Insights
+## 💡 Hasil dan Insight
 
-- The dataset contains 114,000 tracks covering a wide range of music genres.
-- Different music genres show differences in their average popularity.
-- Songs with high popularity show different audio feature profiles compared with songs in lower popularity categories.
-- Explicit and non-explicit songs show differences in their popularity and danceability distributions.
-- `energy` and `loudness` show a strong positive correlation (r ≈ 0.76).
-- `energy` and `acousticness` show a strong negative correlation (r ≈ -0.73).
-- `valence` and `danceability` show a moderate positive relationship.
-- `popularity` does not show a strong linear correlation with individual audio features, indicating that song popularity cannot be explained by audio characteristics alone.
+- Dataset terdiri dari 114.000 lagu yang mencakup berbagai genre musik.
+- Terdapat perbedaan rata-rata popularitas pada berbagai genre musik.
+- Lagu dengan tingkat popularitas tinggi menunjukkan karakteristik audio yang berbeda dibandingkan dengan lagu pada kategori popularitas yang lebih rendah.
+- Lagu eksplisit dan non-eksplisit menunjukkan perbedaan dalam distribusi popularitas dan danceability.
+- `energy` dan `loudness` memiliki korelasi positif yang kuat (r ≈ 0,76).
+- `energy` dan `acousticness` memiliki korelasi negatif yang kuat (r ≈ -0,73).
+- `valence` dan `danceability` memiliki hubungan positif sedang.
+- `popularity` tidak menunjukkan korelasi linear yang kuat dengan masing-masing fitur audio, sehingga popularitas lagu tidak dapat dijelaskan hanya berdasarkan karakteristik audio.
 
-## 🛠️ Tools & Libraries
+## 📊 Dashboard
+
+Hasil analisis data Spotify divisualisasikan dalam dashboard interaktif menggunakan Looker Studio.
+
+Dashboard menyajikan berbagai informasi mengenai popularitas lagu, genre musik, karakteristik audio, konten eksplisit, serta hubungan antarfitur audio.
+
+🔗 **Lihat Dashboard:** [Dashboard Analisis Spotify](https://datastudio.google.com/reporting/6b7ec764-b513-4e50-835c-b2f42dcb3bf9)
+
+## 🛠️ Tools dan Library
 
 - Python
 - Pandas
@@ -106,8 +114,9 @@ The analysis includes:
 - Seaborn
 - SciPy
 - Jupyter Notebook
+- Looker Studio
 
-## 📁 Repository Structure
+## 📁 Struktur Repository
 
 ```text
 spotify-data-analysis/
