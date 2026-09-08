@@ -103,7 +103,7 @@ Hasil analisis data Spotify divisualisasikan dalam dashboard interaktif mengguna
 
 Dashboard menyajikan berbagai informasi mengenai popularitas lagu, genre musik, karakteristik audio, konten eksplisit, serta hubungan antarfitur audio.
 
-🔗 **Lihat Dashboard:** [Dashboard Analisis Spotify](https://datastudio.google.com/reporting/6b7ec764-b513-4e50-835c-b2f42dcb3bf9)
+🔗 **Lihat Dashboard:** [Dashboard Analisis Spotify](https://datastudio.google.com/reporting/b43a186f-390e-4493-a03b-3b38173fda6c)
 
 ## 🛠️ Tools dan Library
 
